@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroMonitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><img src="ChatGPT Image 11 de jun. de 2026, 23_40_05.png" alt=""></h1>
+        <p>Monitoramento Inteligente para o solo</p>
+        <a href="#" class="nav-item active" data-menu="dashboard">
+                    <i data-lucide="home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="sensores">
+                    <i data-lucide="microchip"></i>
+                    <span>Sensores</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="historico">
+                    <i data-lucide="clock"></i>
+                    <span>Histórico</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="alertas">
+                    <i data-lucide="alert-triangle"></i>
+                    <span>Alertas</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="mapa">
+                    <i data-lucide="map-pin"></i>
+                    <span>Mapa</span>
+                </a>
+                <a href="#" class="nav-item" data-menu="configuracoes">
+                    <i data-lucide="settings"></i>
+                    <span>Configuração</span>
+                </a>
+    </header>
+    <main>
+        <section class="painel">
+            <div class="card">
+                <h2>🌡️ Temperatura</h2>
+                <p id="temperatura">28°C</p>
+            </div>
+
+            <div class="card">
+                <h2>💧 Umidade do Solo</h2>
+                <p id="umidade">65%</p>
+            </div>
+
+            <div class="card">
+                <h2>🌱 Status da Plantação</h2>
+                <p id="status">Saudável</p>
+            </div>
+            <div class="card"><h2>PH do solo</h2>
+            <p id="acidez">6,5</p></div>
+
+        </section>
+
+        <button onclick="atualizarSensores()">
+            Atualizar Sensores
+        </button>
+
+        <section class="info">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Este sistema simula sensores utilizados no campo para
+                monitorar a plantação e ajudar produtores a economizar
+                água e aumentar a produtividade.
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
